@@ -7,7 +7,7 @@ bytecode.
 
 ### Prefix `0x5b5b5b5b` at `truffle migration` (i.e. contract deployment) time.
 
-Example:
+Example: https://github.com/labcc/truffle-prefix/blob/master/pet-shop/migrations/2_deploy_contracts.js#L4
 
 * Pros: The `0x5b5b5b5b` prefix never existed before deployment. Less error-prone.
 * Cons: ???
