@@ -51,4 +51,4 @@ See https://github.com/labcc/truffle-prefix-truffle/blob/next/packages/truffle-c
 ## Open Questions
 
 1. How to correct the jump destinations now that the bytecodes are
-   shifted?
+   shifted? Answer: no need, it will be stripped.
