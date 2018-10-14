@@ -5,9 +5,16 @@ bytecode.
 
 ## Options
 
+### Prefix `0x5b5b5b5b` at `truffle migration` (i.e. contract deployment) time.
+
+Example:
+
+* Pros: The `0x5b5b5b5b` prefix never existed before deployment. Less error-prone.
+* Cons: ???
+
 ### Use the external compile feature in Truffle v5.0.0 (beta)
 
-Example: https://github.com/labcc/truffle-prefix/commit/6779bb5a098dbe0e8fc91c91d83d65b49f1af644
+Example: https://github.com/labcc/truffle-prefix/blob/master/pet-shop/truffle.js#L11
 
 Problem: this could be called before the solc compiler, so in order
 for it to work reliably, we have to wrap solc and prevent the
@@ -41,11 +48,6 @@ See https://github.com/labcc/truffle-prefix-truffle/blob/next/packages/truffle-c
 * Cons: The build process is deprecated: "Alert: This command is
   deprecated. Please use third-party build tools like webpack or
   grunt, or see our Truffle Boxes for an example."
-
-### Prefix `0x5b5b5b5b` at `truffle migration` (i.e. contract deployment) time.
-
-* Pros: The `0x5b5b5b5b` prefix never existed before deployment. Less error-prone.
-* Cons: ???
 
 ## Open Questions
 
