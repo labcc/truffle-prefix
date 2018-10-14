@@ -7,7 +7,7 @@ bytecode.
 
 ### Use the external compile feature in Truffle v5.0.0 (beta)
 
-
+Example: https://github.com/labcc/truffle-prefix/commit/6779bb5a098dbe0e8fc91c91d83d65b49f1af644
 
 ### Modify the solc compiler.
 
