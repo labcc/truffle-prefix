@@ -11,7 +11,7 @@ module.exports = {
   // ,
   // compilers: {
   //   external: {
-  //     command: "echo 'Adding 0x5b5b5b5b to contracts'",
+  //     command: "echo 'Adding 0x00707269 to contracts'",
   //     targets: [{
   //       command: "./bin/solc-prefix",
   //       path: "build/**/*.json",

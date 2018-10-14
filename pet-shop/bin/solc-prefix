@@ -9,7 +9,7 @@ def main(argv):
     jsonobj = json.load(open(filename))
     # print(jsonobj.keys(), file=sys.stderr)
     jsonobj['contractName'] += 'Prefixed'
-    jsonobj['bytecode'] = '0x5b5b5b5b' + jsonobj['bytecode'][2:]
+    jsonobj['bytecode'] = '0x00707269' + jsonobj['bytecode'][2:]
     print(json.dumps(jsonobj))
 
 main(sys.argv)
