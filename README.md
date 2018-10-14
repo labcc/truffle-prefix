@@ -5,6 +5,10 @@ bytecode.
 
 ## Options
 
+### Use the external compile feature in Truffle v5.0.0 (beta)
+
+
+
 ### Modify the solc compiler.
 
 * Pros: The bytecodes never existed without 0x5b5b5b5b, least
@@ -38,10 +42,6 @@ See https://github.com/labcc/truffle-prefix-truffle/blob/next/packages/truffle-c
 
 * Pros: The `0x5b5b5b5b` prefix never existed before deployment. Less error-prone.
 * Cons: ???
-
-## Decision
-
-Will try 1, 2 and 4.
 
 ## Open Questions
 
