@@ -7,16 +7,17 @@ module.exports = {
       port: 8545,
       network_id: "*" // Match any network id
     }
-  },
-  compilers: {
-    external: {
-      command: "echo 'Adding 0x5b5b5b5b to contracts'",
-      targets: [{
-        command: "./bin/solc-prefix",
-        path: "build/**/*.json",
-        stdin: false
-        // see https://github.com/labcc/truffle-prefix-truffle/blob/beta/packages/truffle-external-compile/index.js#L161 for details
-      }]
-    }
   }
+  // ,
+  // compilers: {
+  //   external: {
+  //     command: "echo 'Adding 0x5b5b5b5b to contracts'",
+  //     targets: [{
+  //       command: "./bin/solc-prefix",
+  //       path: "build/**/*.json",
+  //       stdin: false
+  //       // see https://github.com/labcc/truffle-prefix-truffle/blob/beta/packages/truffle-external-compile/index.js#L161 for details
+  //     }]
+  //   }
+  // }
 };
