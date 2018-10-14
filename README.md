@@ -9,6 +9,10 @@ bytecode.
 
 Example: https://github.com/labcc/truffle-prefix/commit/6779bb5a098dbe0e8fc91c91d83d65b49f1af644
 
+Problem: this could be called before the solc compiler, so in order
+for it to work reliably, we have to wrap solc and prevent the
+invocation of the default compiler.
+
 ### Modify the solc compiler.
 
 * Pros: The bytecodes never existed without 0x5b5b5b5b, least

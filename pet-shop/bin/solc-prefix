@@ -9,8 +9,10 @@ def main(argv):
     jsonobj = json.load(open(filename))
     print(jsonobj.keys(), file=sys.stderr)
     # for key in jsonobj:
-    # jsonobj['contractName'] += 'kevinchen'
-    jsonobj['schemaVersion'] += 'kevinchen'
+    jsonobj['contractName'] += 'Prefixed'
+    jsonobj['bytecode'] = '0x5b5b5b5b' + jsonobj['bytecode'][2:]
+    jsonobj['deployedBytecode'] = '0x5b5b5b5b' + jsonobj['deployedBytecode'][2:]
+    # jsonobj['schemaVersion'] += 'kevinchen'
     print(json.dumps(jsonobj))
 
 main(sys.argv)
