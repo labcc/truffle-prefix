@@ -14,7 +14,7 @@ bytecode.
 2. Prefix `0x5b5b5b5b` at `truffle compile` time. See https://github.com/labcc/truffle-prefix-truffle/blob/next/packages/truffle-compile/index.js#L192
 
    * Pros: The bytecodes never existed without 0x5b5b5b5b, least
-     error-prone for downstream pipelines.
+     error-prone for downstream pipelines. Easy to do.
    * Cons: The sourceMap field in the json file may not be accurate.
 
 3. Prefix `0x5b5b5b5b` at `truffle build` time.
@@ -31,4 +31,10 @@ bytecode.
 
 ## Decision
 
-Will try 1 and 4.
+Will try 1, 2 and 4.
+
+
+## Open Questions
+
+1. How to correct the jump destinations now that the bytecodes are
+   shifted?
