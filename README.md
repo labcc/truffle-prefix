@@ -6,7 +6,9 @@ Prefix `0x00707269` to the beginning of compiled bytecode.
 
 ### Prefix `0x00707269` at `truffle migrate` time through truffle.js
 
-Example: https://github.com/labcc/truffle-prefix/blob/master/pet-shop/truffle.js#L46
+Example:
+https://github.com/labcc/truffle-prefix/blob/master/pet-shop/truffle.js#L46
+(try `truffle migrate --reset --network=prefix` in pet-shop).
 
 * Pros: The `0x00707269` prefix never existed before deployment. Less error-prone.
 * Cons: ???
